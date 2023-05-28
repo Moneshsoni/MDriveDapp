@@ -1,14 +1,15 @@
-# Sample Hardhat Project
+# MDriveDapp Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project is File storage where you can store your images on IPFS
+I used this project on polygon network.
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
-# MDriveDapp
+# Process to run project
+You can install dependencies
+using command 
+# npm install
+You can run the project go with directory 
+# cd file-storage
+ 
+and run command 
+# npm start
