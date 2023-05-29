@@ -1,5 +1,3 @@
- 
-
 import { useState } from "react";
 import "./Display.css";
 const Display = ({ contract, account }) => {
