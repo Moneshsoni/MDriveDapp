@@ -5,6 +5,7 @@ import { ethers} from "ethers";
 import FileUpload from "./components/FileUpload.js";
 import Modal from "./components/Modal.js";
 import Display from "./components/Display.js";
+import Dissallow from "./components/Dissallow.js";
 
 function App() {
   const [account,setAccount] = useState("");
@@ -54,6 +55,7 @@ function App() {
       <p>Account : {account ? account:"Not connected"}</p>
       <FileUpload account={account} provider={provider} contract={contract}></FileUpload>
       <Display contract={contract} account={account}></Display>
+      <Dissallow contract = {contract} account = {account}></Dissallow>
     </div>
     </>
   );
