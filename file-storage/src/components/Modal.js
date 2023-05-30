@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import "./Modal.css";
 const Modal = ({ setModalOpen, contract }) => {
   const sharing = async () => {
@@ -6,11 +6,13 @@ const Modal = ({ setModalOpen, contract }) => {
     await contract.allow(address);
     setModalOpen(false);
   };
-  useEffect(() => {
+  useState(() => {
     const accessList = async () => {
       const addressList = await contract.shareAccess();
+      
       let select = document.querySelector("#selectNumber");
       const options = addressList;
+      console.log("Options",options);
 
       for (let i = 0; i < options.length; i++) {
         let opt = options[i];
@@ -34,11 +36,7 @@ const Modal = ({ setModalOpen, contract }) => {
               placeholder="Enter Address"
             ></input>
           </div>
-          <form id="myForm">
-            <select id="selectNumber">
-              <option className="address">People With Access</option>
-            </select>
-          </form>
+
           <div className="footer">
             <button
               onClick={() => {
@@ -49,6 +47,15 @@ const Modal = ({ setModalOpen, contract }) => {
               Cancel
             </button>
             <button onClick={() => sharing()}>Share</button>
+
+
+          </div>
+          <div>
+             <form id="myForm">
+                <select id="selectNumber">
+                    <option className="address">People With Access</option>
+                </select>
+             </form>
           </div>
         </div>
       </div>
