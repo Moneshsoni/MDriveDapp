@@ -13,3 +13,6 @@ You can run the project go with directory
  
 and run command 
 # npm start
+
+# netlify
+mdrivestorage
