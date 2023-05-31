@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
-contract Upload{
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+contract Upload is Initializable, UUPSUpgradeable, OwnableUpgradeable{
 
 //struct of Access
     struct Access{
@@ -13,6 +16,10 @@ contract Upload{
     mapping(address =>mapping(address => bool)) ownership;
     mapping(address=>Access[]) accessList;
     mapping(address=>mapping(address=>bool)) previousData;
+
+
+    ///@dev required by the OZ UUPS module
+    function _authorizeUpgrade(address) internal override onlyOwner {}
 
     function add(address _user,string memory url)public{
         value[_user].push(url);
