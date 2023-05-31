@@ -55,7 +55,7 @@ function App() {
       <p>Account : {account ? account:"Not connected"}</p>
       <FileUpload account={account} provider={provider} contract={contract}></FileUpload>
       <Display contract={contract} account={account}></Display>
-      <Dissallow contract = {contract} account = {account}></Dissallow>
+      <Dissallow contract ={contract} account ={account}></Dissallow>
     </div>
     </>
   );
