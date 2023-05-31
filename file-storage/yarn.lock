@@ -7,10 +7,6 @@
   "resolved" "https://registry.npmjs.org/@adobe/css-tools/-/css-tools-4.2.0.tgz"
   "version" "4.2.0"
 
-"@adraffy/ens-normalize@git+https://github.com/ricmoo/ens-normalize.js.git":
-  "resolved" "git+ssh://git@github.com/ricmoo/ens-normalize.js.git#2d040533e57e4f25f9a7cc4715e219658ad454b5"
-  "version" "1.9.0"
-
 "@alloc/quick-lru@^5.2.0":
   "integrity" "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="
   "resolved" "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
@@ -1559,16 +1555,6 @@
   dependencies:
     "eslint-scope" "5.1.1"
 
-"@noble/hashes@1.1.2":
-  "integrity" "sha512-KYRCASVTv6aeUi1tsF8/vpyR7zpfs3FUzy2Jqm+MU+LmUKhQ0y2FpfwqkCcxSg2ua4GALJd8k2R76WxwZGbQpA=="
-  "resolved" "https://registry.npmjs.org/@noble/hashes/-/hashes-1.1.2.tgz"
-  "version" "1.1.2"
-
-"@noble/secp256k1@1.7.1":
-  "integrity" "sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw=="
-  "resolved" "https://registry.npmjs.org/@noble/secp256k1/-/secp256k1-1.7.1.tgz"
-  "version" "1.7.1"
-
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
   "resolved" "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -2019,11 +2005,6 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-20.2.1.tgz"
   "version" "20.2.1"
 
-"@types/node@18.15.13":
-  "integrity" "sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-18.15.13.tgz"
-  "version" "18.15.13"
-
 "@types/parse-json@^4.0.0":
   "integrity" "sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA=="
   "resolved" "https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.0.tgz"
@@ -2445,11 +2426,6 @@
   dependencies:
     "loader-utils" "^2.0.0"
     "regex-parser" "^2.2.11"
-
-"aes-js@4.0.0-beta.5":
-  "integrity" "sha512-G965FqalsNyrPqgEGON7nIx1e/OVENSgiEIzyC63haUMuvNnwIgIjMs52hlTCKhkBny7A2ORNlfY9Zu+jmGk1Q=="
-  "resolved" "https://registry.npmjs.org/aes-js/-/aes-js-4.0.0-beta.5.tgz"
-  "version" "4.0.0-beta.5"
 
 "agent-base@6":
   "integrity" "sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ=="
@@ -4375,19 +4351,6 @@
   "integrity" "sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg=="
   "resolved" "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz"
   "version" "1.8.1"
-
-"ethers@^6.4.0":
-  "integrity" "sha512-nksaMCwX+BOdV2NQ1/57OehSD2JtujbhrdC2+Fb9VpvBO0WO6h+WWwu3oMMw7aUiTa5lvQcWX1vl4aOy7Q3CTg=="
-  "resolved" "https://registry.npmjs.org/ethers/-/ethers-6.4.0.tgz"
-  "version" "6.4.0"
-  dependencies:
-    "@adraffy/ens-normalize" "git+https://github.com/ricmoo/ens-normalize.js.git"
-    "@noble/hashes" "1.1.2"
-    "@noble/secp256k1" "1.7.1"
-    "@types/node" "18.15.13"
-    "aes-js" "4.0.0-beta.5"
-    "tslib" "2.4.0"
-    "ws" "8.5.0"
 
 "eventemitter3@^4.0.0":
   "integrity" "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw=="
@@ -8844,11 +8807,6 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.5.2.tgz"
   "version" "2.5.2"
 
-"tslib@2.4.0":
-  "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
-  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
-  "version" "2.4.0"
-
 "tsutils@^3.21.0":
   "integrity" "sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA=="
   "resolved" "https://registry.npmjs.org/tsutils/-/tsutils-3.21.0.tgz"
@@ -9511,11 +9469,6 @@
   "integrity" "sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA=="
   "resolved" "https://registry.npmjs.org/ws/-/ws-8.13.0.tgz"
   "version" "8.13.0"
-
-"ws@8.5.0":
-  "integrity" "sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg=="
-  "resolved" "https://registry.npmjs.org/ws/-/ws-8.5.0.tgz"
-  "version" "8.5.0"
 
 "xml-name-validator@^3.0.0":
   "integrity" "sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw=="

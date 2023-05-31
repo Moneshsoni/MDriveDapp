@@ -15,12 +15,10 @@ module.exports = {
       }
     ]
   },
-
+  defaultNetwork: "hardhat",
   networks:{
-    hardhat:{
-      chainId:1337,
+    hardhat: {
     },
-
     mumbai: {
       url: `https://polygon-mumbai.g.alchemy.com/v2/X1H7etINPr6jELA9HL7ofrvMHGnyhBcU`,
       accounts: [process.env.PRIVATE_KEY]

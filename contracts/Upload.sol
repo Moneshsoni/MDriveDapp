@@ -18,6 +18,10 @@ contract Upload{
         value[_user].push(url);
     }
 
+    function deleteUserContent(address _user,uint index)external{
+        delete value[_user][index];
+    }
+
     //Give access for the users
     function allow(address user)external{
         ownership[msg.sender][user] = true;
